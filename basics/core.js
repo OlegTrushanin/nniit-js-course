@@ -67,7 +67,14 @@ else {
 
 //Напишите функцию, которая находит N-е число Фибоначчи
 function fibonacci(n) {
-}
+    x1 = 0;
+    x2 = 1;
+    while(n-1>0){
+        y = x1+x2;
+        x1 = x2;
+        x2 = y;
+        n -= 1;}
+    return x2;}
 
 module.exports = {
     isInteger, even, sumTo, recSumTo, factorial, isBinary, fibonacci
