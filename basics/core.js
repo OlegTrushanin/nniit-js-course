@@ -43,27 +43,23 @@ function factorial(n) {
 //Напишите функцию, которая определяет, является ли число двойкой, возведенной в степень
 function isBinary(n) {
 
-    count_1 = 1;
+    
     search_1 = 2;
-
-    count_2 = -1;
     search_2 = 1/2;
     
-    if(n === 1) return 'Yes ';
+    if(n === 1) return true;
 
 if(n>1) {
     
     while(n>=search_1){
-        if(search_1 === n) return 'yes, degree ' + count_1;
-        search_1 *= 2;
-        count_1 += 1;}
-    return 'No'; }
+        if(search_1 === n) return true;
+        search_1 *= 2;}
+    return false; }
 else {
     while(n<=search_2){
-        if(search_2 === n) return 'yes, degree ' + count_2;
-        search_2 *= 1/2;
-        count_2 -= 1;}
-    return 'No'; }}
+        if(search_2 === n) return true;
+        search_2 *= 1/2;}
+    return false; }}
 
 //Напишите функцию, которая находит N-е число Фибоначчи
 function fibonacci(n) {
