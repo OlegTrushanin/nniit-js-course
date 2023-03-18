@@ -18,7 +18,11 @@ function even() {
 
 //Напишите функцию, считающую сумму чисел до заданного используя цикл
 function sumTo(n) {
-}
+let result = 0;
+    while(n>=0){
+        result +=n;
+        n-=1;}
+    return result;}
 
 //Напишите функцию, считающую сумму чисел до заданного используя рекурсию
 function recSumTo(n) {
